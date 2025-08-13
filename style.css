@@ -1,0 +1,265 @@
+/* Base styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* Container to center content */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #0f4c81 0%, #336699 100%);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.hero .tagline {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.hero .btn {
+  background-color: #fff;
+  color: #0f4c81;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #e6e6e6;
+  color: #0f4c81;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #0f4c81;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 15px 10px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffdd57;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+  background-color: #fafafa;
+}
+
+.section:nth-of-type(even) {
+  background-color: #f5f5f5;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #0f4c81;
+  text-align: center;
+}
+
+/* Skills list */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  justify-content: center;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: #e3ecf3;
+  color: #0f4c81;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Experience */
+.experience-item {
+  margin-bottom: 40px;
+}
+
+.experience-item h3 {
+  font-size: 1.5rem;
+  color: #0f4c81;
+  margin-bottom: 5px;
+}
+
+.experience-item .date {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.experience-item ul {
+  list-style: disc inside;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+/* Education */
+.education-item {
+  margin-bottom: 30px;
+}
+
+.education-item h3 {
+  font-size: 1.4rem;
+  color: #0f4c81;
+  margin-bottom: 4px;
+}
+
+.education-item .date {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Projects & activities */
+.projects-list {
+  list-style: disc inside;
+  line-height: 1.6;
+  margin-left: 20px;
+}
+
+/* Individual project block */
+.project {
+  margin-top: 40px;
+}
+
+.project h3 {
+  color: #0f4c81;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.project ul {
+  list-style: disc inside;
+  margin-left: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.project-charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-charts img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Certifications */
+.cert-list {
+  list-style: disc inside;
+  line-height: 1.6;
+  margin-left: 20px;
+}
+
+/* Certificate gallery */
+.cert-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.cert-item {
+  flex: 1 1 280px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.cert-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+}
+
+.cert-item p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+  line-height: 1.8;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contact-list li a {
+  color: #0f4c81;
+  text-decoration: none;
+}
+
+.contact-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #0f4c81;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
